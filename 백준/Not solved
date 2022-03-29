@@ -1,0 +1,15 @@
+N = int(input())
+info_dict = {}
+3
+for n in range(0, N):
+    old = input()
+    old = old.split(" ")
+    old[0] = int(old[0])
+    info_dict[old[1]] = old[0]
+
+sorted_info = sorted(info_dict.items(), reverse=False)
+print(sorted_info)
+ 
+for data in sorted_info:
+    data = dict(data)
+    print(data)
